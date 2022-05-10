@@ -1,4 +1,16 @@
-/* Normalize CSS */
+/************************************************
+            Normalize CSS
+***********************************************/
+:root {
+  --color-primary: #12293b;
+  --color-white: #fff;
+  --color-black: #000;
+
+  --color-warning: rgb(226, 193, 7);
+  --color-info: rgb(7, 146, 211);
+  --color-danger: rgb(219, 9, 9);
+}
+
 html,
 body {
   margin: 0;
@@ -12,20 +24,49 @@ a {
 .clearfix {
   clear: both;
 }
-.float-left {
-  float: left;
+.text-left {
+  text-align: left;
 }
-.float-right {
-  float: right;
+
+.text-center {
+  text-align: center;
 }
+
+.text-right {
+  text-align: right;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-white {
+  color: var(--color-white);
+}
+
+.text-black {
+  color: var(--color-black);
+}
+
 .btn {
   background-color: #fff;
   color: #000;
   padding: 10px 30px;
   text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: 0.5s all;
 }
-.content {
-  padding: 40px;
+.btn-outline {
+  background: inherit !important;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+  color: var(--color-white);
 }
 
 /************************
@@ -39,11 +80,11 @@ a {
   width: 100%;
   z-index: 100;
 }
-.navbar .nav-inner
-{
+.navbar .nav-inner {
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
+  height: 60px;
 }
 .navbar-left .nav-logo {
   width: 100px;
@@ -81,8 +122,7 @@ a {
   background-image: url("../img/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px;
-  height: 100px;
+  height: 100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -103,18 +143,189 @@ a {
 .header-text p {
   font-size: 1.2rem;
 }
-.header-social a{
-    margin-right: 5px;
-    font-size: 0.6rem;
-    color: #fff;
-    border-radius: 20px;
+.header-social a {
+  margin-right: 5px;
+  font-size: 0.6rem;
+  color: #fff;
+  border-radius: 20px;
 }
-.btn-facebook{
-    background-color: #3b5998;
+.btn-facebook {
+  background-color: #3b5998;
 }
-.btn-twitter{
-    background-color: #00aced;
+.btn-twitter {
+  background-color: #00aced;
 }
-.btn-youtube{
-    background-color: #ff0000;
+.btn-youtube {
+  background-color: #ff0000;
+}
+header-profile img {
+  min-width: 400px;
+  max-width: 100%;
+}
+
+/************************
+        Content CSS
+*************************/
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.container-padding {
+  padding: 40px 100px;
+}
+
+/************************
+        Portfolio CSS
+*************************/
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.portfolio {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.4s all;
+}
+.portfolio:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio img {
+  width: 100%;
+  height: 220px;
+}
+
+/************************************************
+            Badge CSS
+***********************************************/
+.badge {
+  background-color: var(--color-primary);
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: var(--color-white);
+  font-size: 0.8rem;
+  margin-right: 2px;
+}
+
+.badge-info {
+  background-color: var(--color-info);
+}
+
+.badge-warning {
+  background-color: var(--color-warning);
+  color: var(--color-black);
+}
+
+.badge-danger {
+  background-color: var(--color-danger);
+}
+
+/************************************************
+            Contact CSS
+***********************************************/
+#contact-me {
+  margin-top: 3rem;
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-box {
+  display: flex;
+}
+
+.contact-box > *:nth-child(1) {
+  flex-basis: 60%;
+  margin: 0 auto;
+  padding: 40px 100px;
+}
+
+.contact-box > *:nth-child(2) {
+  flex-basis: 40%;
+  margin: 0 auto;
+}
+
+.contact-box .form-group {
+  margin-bottom: 20px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: var(--color-white);
+  border: 1px solid var(--color-white);
+  margin-top: 10px;
+  transition: 0.5s all;
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid var(--color-primary);
+  outline: none;
+}
+
+/************************************************
+            Footer CSS
+***********************************************/
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 80px 100px;
+}
+
+.footer .footer-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-top > div {
+  flex: 0 0 33.3%;
+}
+
+.footer-top > div ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-top > div ul li {
+  padding-top: 15px;
+}
+
+.footer a {
+  color: #97999e;
+}
+
+.footer-copyright {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.back-to-top {
+  background-color: var(--color-white);
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+.back-to-top i {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-right: 15px;
+  color: var(--color-primary);
+}
+
+.back-to-top:hover {
+  background-color: var(--color-black);
+}
+
+.back-to-top:hover i {
+  color: var(--color-white);
 }
