@@ -16,6 +16,9 @@
     <!-- Main CSS File -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="assets/css/font-awesome/css/all.min.css">
     <title>Portfolio</title>
 </head>
 
@@ -28,16 +31,31 @@
                     <a href=""><img src="assets/img/logo.png" class="nav-logo" alt="DevsEnv Logo"></a>
                 </div>
                 <div class="navbar-right">
-                    <ul>
-                        <li><a href="#wrapper" class="btn active">Home</a></li>
-                        <li><a href="#about-me" class="btn">About</a></li>
+                    <span class="md-hidden navbar-toggle text-white">
+                        <i class="fas fa-bars" id="toggle-icon"></i>
+                    </span>
+                    <ul class="sm-hidden">
+                        <li><a href="#wrapper" class="btn active"><i class="fa-solid fa-house"></i> Home</a></li>
                         <li>
-                            <a href="#portfolio" class="btn btn-portfolio">
+                            <a href="#portfolio" class="btn btn-portfolio"><i class="fa-solid fa-th"></i>
                                 Portfolio
                                 <span class="portfolio-count">3</span>
                             </a>
                         </li>
-                        <li><a href="#contact" class="btn">Contact</a></li>
+                        <li><a href="#about-me" class="btn"><i class="fa-solid fa-user"></i> About</a></li>
+                        <li><a href="#contact-me" class="btn"><i class="fa-solid fa-mobile"></i> Contact</a></li>
+                    </ul>
+                    <ul class="md-hidden mobile-navbar">
+                        <li><a href=""><img src="assets/img/logo.png" class="nav-logo" alt="DevsEnv Logo" width="100px"></a></li>
+                        <li><a href="#wrapper" class="btn active"><i class="fa-solid fa-house"></i> Home</a></li>
+                        <li>
+                            <a href="#portfolio" class="btn btn-portfolio"><i class="fa-solid fa-th"></i>
+                                Portfolio
+                                <span class="portfolio-count">3</span>
+                            </a>
+                        </li>
+                        <li><a href="#about-me" class="btn"><i class="fa-solid fa-user"></i> About</a></li>
+                        <li><a href="#contact-me" class="btn"><i class="fa-solid fa-mobile"></i> Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -46,10 +64,10 @@
 
         <!-- Start Header Banner Section -->
         <header>
-            <div class="header-banner">
+            <div class="header-banner container-padding">
                 <div class="header-info">
                     <div class="header-text">
-                        <h2>Welcome to my Portfolio</h2>
+                        <h2>Welcome to My Portfolio</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus sit perspiciatis pariatur
                             ipsam veritatis reprehenderit explicabo laboriosam soluta iste, amet nisi mollitia facilis
                             libero ducimus.</p>
@@ -68,29 +86,71 @@
         </header>
         <!-- End Header Banner Section -->
 
+        <!-- Start Portfolio Section -->
+        <section id="portfolio" class="container-padding">
+            <h2 class="section-title">Portfolios</h2>
+            <div class="portfolios">
+                <div class="portfolio">
+                    <img src="assets/img/portfolio-1.jpg" alt="">
+                    <h3>Simple E-commerce Application</h3>
+                    <div>
+                        <span class="badge badge-info">Ecommerce</span>
+                        <span class="badge badge-warning">Laravel</span>
+                        <span class="badge badge-danger">React JS</span>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/img/portfolio-2.jpg" alt="">
+                    <h3>Simple E-commerce Application</h3>
+                    <div>
+                        <span class="badge badge-info">Ecommerce</span>
+                        <span class="badge badge-warning">Laravel</span>
+                        <span class="badge badge-danger">React JS</span>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/img/portfolio-3.jpg" alt="">
+                    <h3>Simple E-commerce Application</h3>
+                    <div>
+                        <span class="badge badge-info">Ecommerce</span>
+                        <span class="badge badge-warning">Laravel</span>
+                        <span class="badge badge-danger">React JS</span>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/img/portfolio-2.jpg" alt="">
+                    <h3>Simple E-commerce Application</h3>
+                    <div>
+                        <span class="badge badge-info">Ecommerce</span>
+                        <span class="badge badge-warning">Laravel</span>
+                        <span class="badge badge-danger">React JS</span>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/img/portfolio-3.jpg" alt="">
+                    <h3>Simple E-commerce Application</h3>
+                    <div>
+                        <span class="badge badge-info">Ecommerce</span>
+                        <span class="badge badge-warning">Laravel</span>
+                        <span class="badge badge-danger">React JS</span>
+                    </div>
+                </div>
+                <div class="portfolio">
+                    <img src="assets/img/portfolio-2.jpg" alt="">
+                    <h3>Simple E-commerce Application</h3>
+                    <div>
+                        <span class="badge badge-info">Ecommerce</span>
+                        <span class="badge badge-warning">Laravel</span>
+                        <span class="badge badge-danger">React JS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Portfolio Section -->
+
         <!-- Start Content Section -->
-        <section id="about-me" class="content">
-            <h2 class="title">About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
-                tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
+        <section id="about-me" class="container-padding">
+            <h2 class="section-title">About Me</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
                 tempore officia iste laborum! Pariatur fugiat quae iusto excepturi? Fugiat, quaerat id.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quidem voluptate, et veniam
@@ -100,21 +160,82 @@
         </section>
         <!-- End Content Section -->
 
-        <!-- Start Portfolio Section -->
-        <section id="portfolio" class="content">
-            <h2>Portfolios</h2>
-
-        </section>
-        <!-- End Portfolio Section -->
-
         <!-- Start Contact Section -->
-        <section id="contact" class="content">
-            <h2>Contact</h2>
-
+        <section id="contact-me" class="container-padding">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-box">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="input" id="name" placeholder="Please enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="input" id="email" placeholder="Please enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="input" id="subject" placeholder="Please enter your message subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="input" id="message" placeholder="Please enter your message"
+                            rows="4"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-outline">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.3739542709354!2d90.4081659150484!3d23.769694393955646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c778de98c2f3%3A0x1ab5c9579bb766a1!2sAkij%20Group!5e0!3m2!1sen!2sbd!4v1646941619623!5m2!1sen!2sbd"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
         </section>
         <!-- End Contact Section -->
 
         <!-- Start Footer Section -->
+        <footer id="footer-container" class="footer container-padding">
+            <div class="footer-top">
+                <div>
+                    <a href="#wrapper">
+                        <img src="assets/img/logo.png" class="nav-logo" alt="DevsEnv Logo" srcset="">
+                    </a>
+                    <p>
+                        Eager to learn something anytime...
+                    </p>
+                </div>
+                <div>
+                    <h3>Recent Articles</h3>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adip</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adip</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adip</a></li>
+                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adip</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Me</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i><span>Dhaka, Bangladesh</span></li>
+                        <li><i class="fas fa-phone"></i><span>+88029372983</span></li>
+                        <li>
+                            <i class="fas fa-envelope"></i><span><a href="mailto:emdidar@gmail.com">emdidar@gmail.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2022 all rights reserved.</p>
+            </div>
+            <div class="text-right">
+                <a href="#wrapper" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+            </div>
+        </footer>
         <!-- End Footer Section -->
     </div>
     <!-- Scripts -->
