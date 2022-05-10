@@ -1,0 +1,16 @@
+/************************
+        Responsive CSS
+*************************/
+
+/* Mobile Device */
+@media only screen and (max-width: 767px) {
+    .header-banner{
+        flex-direction: column-reverse;
+        margin-top: 4rem;
+    }
+}
+
+/* Tab Device */
+@media only screen and (min-width: 768px) {
+
+}
