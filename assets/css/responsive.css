@@ -4,13 +4,69 @@
 
 /* Mobile Device */
 @media only screen and (max-width: 767px) {
-    .header-banner{
-        flex-direction: column-reverse;
-        margin-top: 4rem;
-    }
+  .header-banner {
+    flex-direction: column-reverse;
+    margin-top: 4rem;
+  }
+  .container-padding {
+    padding: 10px 15px;
+  }
+  .contact-box {
+    flex-direction: column;
+  }
+  .contact-box > :nth-child(1) {
+    margin: inherit;
+  }
+  .sm-hidden {
+    display: none;
+  }
+  .mobile-navbar {
+    width: 0;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+    left: -42px;
+    top: -16px;
+    text-align: left;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    transition: .5s all;
+  }
+  .mobile-navbar-sidebar-open {
+    width: 300px;
+  }
+  .mobile-navbar li {
+    display: block !important;
+  }
+  .mobile-navbar li:nth-child(2) {
+    margin-top: 4rem;
+  }
+  .mobile-navbar li a {
+    display: block !important;
+    padding: 20px;
+    margin: 20px;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 30px;
+  }
+  .mobile-navbar li a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-bottom: 2px solid var(--color-danger);
+  }
+  .navbar-toggle {
+    margin-top: 12px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  .footer {
+    flex-direction: column;
+  }
 }
 
-/* Tab Device */
+/* Tab Device or Desktop Device*/
 @media only screen and (min-width: 768px) {
-
+  .md-hidden {
+    display: none;
+  }
 }
