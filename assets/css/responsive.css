@@ -21,8 +21,8 @@
     display: none;
   }
   .mobile-navbar {
-    width: 0;
-    height: 100vh;
+      width: 0;
+      height: 100vh;
     background-color: white;
     position: absolute;
     left: -42px;
@@ -30,9 +30,14 @@
     text-align: left;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
-    transition: .5s all;
-  }
-  .mobile-navbar-sidebar-open {
+    transition: 0.5s all;
+    text-align: center;
+}
+.mobile-navbar img{    
+    margin-top: 35px;
+    margin-left: 25px;
+}
+.mobile-navbar-sidebar-open {
     width: 300px;
   }
   .mobile-navbar li {
