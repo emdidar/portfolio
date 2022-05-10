@@ -39,16 +39,12 @@ a {
   width: 100%;
   z-index: 100;
 }
-.nav-inner
+.navbar .nav-inner
 {
   padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
 }
-/* .navbar-left {
-    
-}
-.navbar-right {
-  
-} */
 .navbar-left .nav-logo {
   width: 100px;
 }
@@ -86,10 +82,13 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 20px;
-  height: 100vh;
+  height: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-text {
-  position: absolute;
   bottom: 40px;
   text-align: center;
   color: #fff;
